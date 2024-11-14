@@ -60,7 +60,10 @@ setup(
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
     ],
-    install_requires=["django-recaptcha>=4"],
+    install_requires=[
+        "wagtail>=5.0",
+        "django-recaptcha>=4"
+    ],
     extras_require={
         "testing": testing_extras,
         "docs": documentation_extras,
